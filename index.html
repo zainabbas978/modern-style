@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Decor</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar (unchanged) -->
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">ModernBrand</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/About.html">About</a></li>
+            <li><a href="pages/service.html">Services</a></li>
+            <li><a href="pages/portfoilo.html">Portfolio</a></li>
+            <li><a href="pages/contact.html">Contact Us</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Transform Your Home with Modern Elegance</h1>
+                <p>Discover our collection of home decor products to elevate your space.</p>
+                <a href="#" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured">
+            <h2>Our Collections</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/image.png" alt="Decor Item 1">
+                    <h3>Elegant Sofa</h3>
+                    <p>Stylish and comfortable.</p>
+                </div>
+                <div class="product-card">
+                    <img src="images/image copy.png" alt="Decor Item 2">
+                    <h3>Minimalist Lamp</h3>
+                    <p>Perfect lighting for every room.</p>
+                </div>
+                <div class="product-card">
+                    <img src="images/image copy 2.png" alt="Decor Item 3">
+                    <h3>Modern Vase</h3>
+                    <p>Add a touch of art to your home.</p>
+                </div>
+                <div class="product-card">
+                    <img src="images/image copy 3.png" alt="Decor Item 4">
+                    <h3>Designer Chair</h3>
+                    <p>For stylish comfort.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta">
+            <h2>Elevate Your Home Today</h2>
+            <a href="#" class="cta-button">Explore More</a>
+        </section>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

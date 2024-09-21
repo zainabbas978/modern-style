@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ModernBrand</title>
+    <link rel="stylesheet" href="../css/portfoilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="../index.html">ModernBrand</a></div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero Section -->
+    <section class="portfolio-hero">
+        <div class="portfolio-content">
+            <h1>Our Latest Projects</h1>
+            <p>Explore our diverse portfolio of home decor projects that elevate spaces to new heights.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio-grid-section">
+        <h2>Our Featured Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <img src="../images/download (6).jpeg" alt="Project 1">
+                <h3>Modern Living Room</h3>
+                <p>A spacious, elegant design with minimalistic touches and modern furniture.</p>
+            </div>
+            <div class="portfolio-card">
+                <img src="../images/download (7).jpeg" alt="Project 2">
+                <h3>Luxury Bedroom</h3>
+                <p>This bedroom features custom furniture and soft lighting for a serene atmosphere.</p>
+            </div>
+            <div class="portfolio-card">
+                <img src="../images/download (8).jpeg" alt="Project 3">
+                <h3>Elegant Dining Room</h3>
+                <p>An open-concept dining area that combines natural materials and sleek designs.</p>
+            </div>
+            <div class="portfolio-card">
+                <img src="../images/download (9).jpeg" alt="Project 4">
+                <h3>Outdoor Lounge</h3>
+                <p>A cozy outdoor setup with weather-resistant materials and stylish seating.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles & Posts Section -->
+    <section class="portfolio-articles">
+        <h2>Latest Design Trends</h2>
+        <div class="articles-grid">
+            <article class="post">
+                <img src="../images/download (10).jpeg" alt="Article 1">
+                <h3>How to Decorate With Natural Materials</h3>
+                <p>Learn how to incorporate natural elements into your home decor for a refreshing and organic look.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article class="post">
+                <img src="../images/download (11).jpeg" alt="Article 2">
+                <h3>Tips for Creating Cozy Outdoor Spaces</h3>
+                <p>Get inspired by these outdoor decor ideas that turn your backyard into a welcoming retreat.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article class="post">
+                <img src="../images/download (12).jpeg" alt="Article 3">
+                <h3>Designing a Modern Living Room</h3>
+                <p>Explore how modern living rooms blend functionality with elegance to create a warm and inviting space.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - ModernBrand</title>
+    <link rel="stylesheet" href="../css/service.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="../index.html">ModernBrand</a></div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="portfoilo.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+        <div class="services-content">
+            <h1>Our Expert Home Decor Services</h1>
+            <p>We offer a variety of home decor solutions to fit every style and space.</p>
+        </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="services-overview">
+        <h2>What We Offer</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Interior Design Consulting</h3>
+                <p>Our experts work with you to design spaces that reflect your personality and meet your functional needs.</p>
+            </div>
+            <div class="service-card">
+                <h3>Custom Furniture Design</h3>
+                <p>We create bespoke furniture pieces tailored to your home, ensuring quality and uniqueness.</p>
+            </div>
+            <div class="service-card">
+                <h3>Home Staging</h3>
+                <p>Our home staging service helps you showcase your property at its best for potential buyers or guests.</p>
+            </div>
+            <div class="service-card">
+                <h3>Lighting Design</h3>
+                <p>Lighting can change the entire mood of a room. We provide creative lighting solutions for every space.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles & Posts Section -->
+    <section class="service-articles">
+        <h2>Latest Trends & Posts</h2>
+        <div class="articles-grid">
+            <article class="post">
+                <img src="../images/download (1).jpeg" alt="Modern Lighting Ideas">
+                <h3>Top 5 Modern Lighting Ideas</h3>
+                <p>Explore our top picks for modern lighting that will transform your living spaces into elegant, well-lit havens.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article class="post">
+                <img src="../images/download (2).jpeg" alt="Sustainable Furniture">
+                <h3>Sustainable Furniture Design</h3>
+                <p>Discover how sustainable materials are changing the world of home decor with eco-friendly and stylish furniture options.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article class="post">
+                <img src="../images/download (1).jpeg" alt="Minimalist Decor Tips">
+                <h3>Minimalist Decor Tips for Small Spaces</h3>
+                <p>Learn how to maximize small spaces with minimalist decor that keeps your home feeling spacious and airy.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

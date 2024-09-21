@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ModernBrand</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar (unchanged) -->
+    <nav class="navbar">
+        <div class="logo"><a href="../index.html">ModernBrand</a></div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="portfoilo.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="about-hero">
+        <div class="about-content">
+            <h1>About ModernBrand</h1>
+            <p>We are passionate about modern design that elevates your living space. Our curated collection of home decor products brings style, elegance, and comfort to your home.</p>
+        </div>
+    </section>
+
+    <section class="about-details">
+        <div class="about-text">
+            <h2>Our Story</h2>
+            <p>Founded in 2020, ModernBrand started with a vision to redefine home decor. Our goal is to bring innovative and stylish products that help you create a space that reflects your personal taste and lifestyle. Whether you're looking for minimalist pieces or bold statement items, we have something for every home.</p>
+
+            <h2>Our Mission</h2>
+            <p>At ModernBrand, our mission is to provide high-quality, aesthetically pleasing, and functional home decor items that inspire and transform spaces. We believe that your home should be a sanctuary that reflects your unique style and personality.</p>
+        </div>
+        <div class="about-image">
+            <img src="../images/download (5).jpeg" alt="Our Team at Work">
+        </div>
+    </section>
+
+    <section class="about-values">
+        <h2>Our Values</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <h3>Quality</h3>
+                <p>We believe in offering products that stand the test of time, blending durability with style.</p>
+            </div>
+            <div class="value-card">
+                <h3>Creativity</h3>
+                <p>Our team constantly pushes the boundaries to offer innovative designs that resonate with modern trends.</p>
+            </div>
+            <div class="value-card">
+                <h3>Sustainability</h3>
+                <p>We are committed to providing eco-friendly products that help reduce environmental impact.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
